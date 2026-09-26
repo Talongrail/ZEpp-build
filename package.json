@@ -1,0 +1,13 @@
+{
+  "name": "amazfit-aerometar",
+  "version": "1.0.0",
+  "description": "Aviation METAR Weather for Amazfit Watches",
+  "main": "app.js",
+  "scripts": {
+    "build": "zepp-cli build",
+    "preview": "zepp-cli preview"
+  },
+  "devDependencies": {
+    "@zeppos/zml": "^1.0.0"
+  }
+}

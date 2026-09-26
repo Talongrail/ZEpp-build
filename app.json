@@ -1,0 +1,69 @@
+{
+  "configVersion": "v2",
+  "app": {
+    "appType": "app",
+    "appName": "AeroMETAR",
+    "appId": 1084291,
+    "version": {
+      "code": 1,
+      "name": "1.0.0"
+    },
+    "icon": "assets/icon.png",
+    "vender": "AeroPulse",
+    "description": "Aviation METAR Weather for Amazfit Watches",
+    "devices": [
+      {
+        "name": "balance",
+        "deviceSource": 7995648,
+        "screen": {
+          "shape": 1,
+          "width": 480,
+          "height": 480
+        }
+      },
+      {
+        "name": "t-rex-3",
+        "deviceSource": 7995650,
+        "screen": {
+          "shape": 1,
+          "width": 480,
+          "height": 480
+        }
+      },
+      {
+        "name": "gtr-4",
+        "deviceSource": 7995600,
+        "screen": {
+          "shape": 1,
+          "width": 466,
+          "height": 466
+        }
+      },
+      {
+        "name": "active",
+        "deviceSource": 7995660,
+        "screen": {
+          "shape": 0,
+          "width": 390,
+          "height": 450
+        }
+      }
+    ]
+  },
+  "permissions": [
+    "device:os.bg_service",
+    "device:os.alarm"
+  ],
+  "module": {
+    "page": {
+      "pages": [
+        "page/index"
+      ]
+    },
+    "app-service": {
+      "services": [
+        "service/metar-fetcher"
+      ]
+    }
+  }
+}
